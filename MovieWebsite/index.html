@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L3ZAWA Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="logo.jpg" alt="L3ZAWA Movies Logo" class="logo">
+            </div>
+            <div class="site-name">
+                <h1>
+                    <span class="blue-text">L3ZAWA</span>
+                    <span class="purple-text">Movies</span>
+                </h1>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="ابحث عن فيلم..." id="searchBox">
+                <button onclick="searchMovie()">بحث</button>
+            </div>
+        </div>
+    </header>
+    <div id="moviePopup" class="popup">
+        <div class="popup-content">
+            <h2 id="popupTitle">مشاهدة الفيلم</h2>
+            <video id="popupVideo" controls>
+                <source id="popupVideoSource" src="" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+            <div class="buttons">
+                <button class="watch" onclick="playPopupVideo()">مشاهدة الفيلم</button>
+                <a id="downloadBtn" class="download" download>تحميل الفيلم</a>
+            </div>
+            <button class="close" onclick="closePopup()">إغلاق</button>
+        </div>
+    </div>
+    <div class="movies-container">
+        <div class="movie" onclick="playMovie('C:\\Users\\Chakar Mohamed\\Desktop\\MovieWebsite\\intersteller.mp4.mp4')">
+            <img src="Interstellar.jpg" alt="">
+            <h3> </h3>
+        </div>
+        
+        <div class="movie" onclick="playMovie('video2.mp4')">
+            <img src="The platform.jpg" alt="">
+            <h3> </h3>
+        </div>
+        <div class="movie" onclick="playMovie('video2.mp4')">
+            <img src="Matrix.jpg" alt="">
+            <h3></h3>
+        </div>
+        <div class="movie" onclick="playMovie('video2.mp4')">
+            <img src="Forrest Gump.jpg" alt="">
+            <h3></h3>
+        </div>
+        <div class="movie" onclick="playMovie('video2.mp4')">
+            <img src="pulp Fictions.jpg" alt=" ">
+            <h3></h3>
+        </div>
+        <div class="movie" onclick="playMovie('video2.mp4')">
+            <img src="Inception.jpg" alt=" ">
+            <h3> </h3>
+        </div>
+        <div class="movie" onclick="playMovie('video2.mp4')">
+            <img src="Lord Of Rings.jpg" alt=" ">
+            <h3> </h3>
+        </div>
+        <div class="movie" onclick="playMovie('video2.mp4')">
+            <img src="Schindler s List.jpg" alt="">
+            <h3> </h3>
+        </div>
+        <div class="movie" onclick="playMovie('video2.mp4')">
+            <img src="Fight Club.jpg" alt=" ">
+            <h3> </h3>
+        </div>
+        <div class="movie" onclick="playMovie('video2.mp4')">
+            <img src="The Godfather.jpg" alt="">
+            <h3> </h3>
+        </div>
+        <div class="movie" onclick="playMovie('video3.mp4')">
+            <img src="images.jpg" alt="">
+            <h3> </h3>
+    </div>
+    <div id="videoPlayer">
+        <span onclick="closePlayer()">×</span>
+        <video controls id="movieVideo">
+            <source src="C:\Users\Chakar Mohamed\Desktop\MovieWebsite\intersteller.mp4.mp4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
